@@ -2,7 +2,8 @@ import { Request, Response } from "express";
 
 class UploadController {
   async index(req: Request, res: Response) {
-    res.send("teste");
+    console.log(req.file);
+    res.json({ message: "teste" });
   }
 }
 
