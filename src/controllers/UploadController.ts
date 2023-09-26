@@ -2,8 +2,12 @@ import { Request, Response } from "express";
 
 class UploadController {
   async index(req: Request, res: Response) {
-    console.log(req.file);
-    res.json({ message: "teste" });
+    if (req.file) {
+      const fileName = req.file.filename;
+      res.json({ file: fileName, message: "success" });
+    } else {
+      return res.status(400).json({ message: "no files were sent" });
+    }
   }
 }
 
