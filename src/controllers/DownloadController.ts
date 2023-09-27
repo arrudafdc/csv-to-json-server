@@ -3,8 +3,9 @@ import path from "path";
 
 class DownloadController {
   async index(req: Request, res: Response) {
-    const fileName = req.params.file;
-    res.download(path.resolve(__dirname, "..", "..", "uploads", fileName));
+    const fileName = req.params.file.replace(".csv", ".json");
+
+    res.download(path.resolve(__dirname, "..", "..", "downloads", fileName));
   }
 }
 

@@ -7,7 +7,7 @@ class UploadController {
       const fileName = req.file.filename;
 
       const csvToJsonWithStreams = new CsvToJsonWithStreams(fileName);
-      csvToJsonWithStreams.createJson(fileName);
+      csvToJsonWithStreams.createJson(fileName, ",");
 
       res.json({ file: fileName, message: "success" });
     } else {

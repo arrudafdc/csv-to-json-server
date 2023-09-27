@@ -1,11 +1,14 @@
 import { Transform } from "stream";
+import CsvToObject from "./CsvToObject";
 
 class TransformCsv {
-  static transform() {
+  static transform(separator: string) {
     const tranform = new Transform({
       transform(chunk, encoding, callback) {
         const csv = chunk.toString();
-        callback(null, csv);
+        const csvObject = CsvToObject.parser(csv, separator);
+        const result = JSON.stringify(csvObject);
+        callback(null, result);
       },
     });
     return tranform;

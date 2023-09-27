@@ -11,9 +11,9 @@ class CsvToJsonWithStreams {
     );
   }
 
-  public createJson(fileName: string) {
+  public createJson(fileName: string, separator: string) {
     const fileJson = fileName.replace(".csv", ".json");
-    const transform = TransformCsv.transform();
+    const transform = TransformCsv.transform(separator);
     if (this.csvStream)
       this.csvStream
         .pipe(transform)
