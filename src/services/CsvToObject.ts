@@ -5,15 +5,14 @@ interface IJsonObject {
 class CsvToObject {
   static parser(csv: string, separator: string): object[] {
     const lines = csv.split("\n");
-    console.log(lines);
-    const teste = lines.map((line) => {
+    const withoutSemicolon = lines.map((line) => {
       return line.replace(/[;]+/g, ",");
     });
-    const outroTeste = teste.map((line) => {
+    const withoutQuot = withoutSemicolon.map((line) => {
       return line.replace(/["]+/g, "");
     });
 
-    const [header, ...body] = outroTeste;
+    const [header, ...body] = withoutQuot;
     const keys = header.split(separator);
 
     const finalFile = body.map((line) => {
