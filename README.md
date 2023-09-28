@@ -1,4 +1,5 @@
 # csv-to-json-server
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/arrudafdc/csv-to-json-server/blob/main/LICENSE) 
 
 Esse é o back-end do csvToJsonApp.
 
