@@ -34,14 +34,15 @@ A URL base é http://localhost:3333
 
 ### upload
 
-- Rota do tipo POST que faz o upload de arquivos CSV e retorna um nome único para ser usado como parametro para a rota GET download.
+- Rota do tipo POST que faz o upload de arquivos CSV e retorna um nome único para ser usado como parametro para a GET.
+- Para o rota funcionar o campo deve obrigatioriamente receber o nome "file"
 
 > http://localhost:3333/uploads
 
 ### download
 
-- Rota do tipo GET que disponibiliza o arquivo JSON para download baseado no  parâmetro de nome único gerado na rota POST upload.
-
+- Rota do tipo GET que disponibiliza o arquivo JSON para download baseado no parâmetro de nome único gerado no POST.
+  
 > http://localhost:3333/download/:file
 
 
