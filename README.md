@@ -2,7 +2,7 @@
 
 Esse é o back-end do csvToJsonApp.
 
-Uma API construída com NodeJS, Typescript e Express que recebe um arquivo CSV, faz a transformação pra JSON e disponibiliza o mesmo para download.
+Uma API construída com NodeJS, Typescript e Express que recebe um arquivo CSV, transforma para JSON e disponibiliza o mesmo para download.
 
 ## Sobre o projeto
 
