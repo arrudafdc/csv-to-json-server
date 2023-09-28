@@ -6,7 +6,9 @@ Uma API construída com NodeJS, Typescript e Express que recebe um arquivo CSV, 
 
 ## Sobre o projeto
 
-Esse projeto faz parte do meu portfólio pessoal e começou com o desejo de explorar e aprender mais sobre APIS nativas do Node. Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de fato processar grandes arquivos sob demanda de forma rápida e com um consumo eficiente de memória utilizando a API de Streams.
+Esse projeto faz parte do meu portfólio pessoal e começou com o desejo de explorar e aprender mais sobre APIs nativas do Node.
+
+Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de fato processar grandes arquivos sob demanda de forma rápida e com um consumo eficiente de memória utilizando a API de Streams.
 
 ## Como usar
 
@@ -14,7 +16,7 @@ Para executar este projeto em modo de desenvolvimento, você só precisará ter 
 
 ```bash
 # clonar repositório
-git clone https://github.com/arrudafdc/csv-to-json-with-streams.git
+git clone https://github.com/arrudafdc/csv-to-json-server.git
 
 # entrar na pasta do projeto csv-to-json-server
 cd csv-to-json-server
