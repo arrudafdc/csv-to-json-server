@@ -36,7 +36,7 @@ A URL base é http://localhost:3333
 ### upload
 
 - Rota do tipo POST que faz o upload de arquivos CSV e retorna um nome único para ser usado como parametro para a GET.
-- Para o rota funcionar o campo deve obrigatioriamente receber o nome "file"
+- Para o rota funcionar o campo deve obrigatioriamente receber o nome "file" e o Content-Type deve ser multipart/form.
 
 > http://localhost:3333/uploads
 
