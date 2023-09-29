@@ -6,7 +6,7 @@ class RemoveFiles {
       fs.unlink(path, () => {
         console.log("successfully deleted");
       });
-    }, 10000);
+    }, 60000);
   }
 }
 
