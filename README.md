@@ -1,17 +1,17 @@
 # csv-to-json-server
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/arrudafdc/csv-to-json-server/blob/main/LICENSE) 
 
-Esse é o back-end do csvToJsonApp.
+Esse é o back-end do https://github.com/arrudafdc/csv-to-json-app.
 
 Uma API construída com NodeJS, Typescript e Express que recebe um arquivo CSV, transforma para JSON e disponibiliza o mesmo para download.
 
-## Sobre o projeto
+## Sobre o Projeto
 
 Esse projeto faz parte do meu portfólio pessoal e começou com o desejo de explorar e aprender mais sobre APIs nativas do Node.
 
 Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de fato processar grandes arquivos sob demanda de forma rápida e com um consumo eficiente de memória utilizando a API de Streams.
 
-## Como usar
+## Como Usar
 
 Para executar este projeto em modo de desenvolvimento, você só precisará ter o NodeJS instalado.
 
@@ -47,7 +47,7 @@ A URL base é http://localhost:3333
 > http://localhost:3333/download/:file
 
 
-## Construído com
+## Construído Com
 
 * Typescript
 * NodeJS
